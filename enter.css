@@ -1,0 +1,39 @@
+#main{
+    display: flex;
+    position: relative;
+    width: 950px;
+    background-color: burlywood;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+input{
+    padding: 10px;
+    margin-bottom: 20px;
+    transform: scale(1);
+    border-radius: 8px;
+    border: none;
+    transition: all 0.5s ease;
+    outline: none;
+}
+#main>h{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+}
+input:hover , input:active , input:focus{
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.radio{
+    display: flex;
+
+    justify-content: space-around;
+}
+#submit {
+    margin-left: 60px;
+    margin-top: 10px;
+}

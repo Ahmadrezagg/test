@@ -1,0 +1,255 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "B Yekan";
+
+}
+/* css reset */
+
+#navbar{
+    height:50px;
+    width: 100%;
+    background-color: #fff;
+    padding:0 40px;
+    box-shadow: -30px -40px 80px #000;
+}
+
+#menu-container{
+    height:100%;
+    /*background-color: blueviolet;*/
+    width:max-content;
+    float: right;
+}
+#menu{
+    height: 100%;
+    /*background-color: brown;*/
+    list-style-type: none;
+    padding:10px 0;
+}
+#menu li{
+    float: right;
+    width: 120px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    color:#fff;
+    position: relative;
+}
+#menu li a{
+    background-color: orange;
+    display: block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:#fff;
+    transition: all 500ms ease;
+    border-radius: 8px;
+
+
+}
+#menu>li a:hover{
+    background-color: #0172e0;
+}
+
+#menu>li:nth-child(2){
+    margin: 0 10px;
+}
+
+#logo-container{
+    width: 50px;
+    height:50px;
+    float: left;
+    padding: 5px;
+
+}
+#logo-container img{
+    width:120px;
+}
+
+#menu>li>ul{
+    width:120px;
+    height:0;
+    /*display: none;*/
+    padding-top: 2px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+
+}
+
+#menu>li:hover>ul{
+    height: 62px;
+    /*display: block;*/
+}
+
+#menu>li>ul>li>a{
+    border-bottom:1px solid #fff;
+}
+
+#menu>li>ul>li:first-child>a{
+    border-radius: 8px 8px 0 0;
+
+}
+
+#menu>li>ul>li:last-child>a{
+    border-radius: 0 0 8px 8px;
+    border-bottom:none;
+
+}
+#image{
+    width: 100%;
+    height: 600px;
+    background-image: url("img/iphone13.jpg");
+    background-position: top;
+    background-size: cover;
+}
+#gallery{
+    width: 100%;
+    max-width: 1920px;
+    padding:40px;
+}
+#gallery-text{
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+    /*margin-top: 10px;*/
+}
+#gallery-text>h1:before{
+    content:'';
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:coral;
+    margin-right:20px;
+
+}
+#gallery-text>h1:after{
+    content:'';
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:coral;
+    margin-left:20px;
+
+}
+.gallery-container{
+    width: 100%;
+    max-width:1280px;
+    height: 400px;
+   /* background-color: gray;*/
+    margin: 0 0 30px 80px;
+
+}
+
+.gallery-img{
+    width: 31%;
+    height: 400px;
+    background-color: white;
+    float: right;
+    overflow: hidden;
+    border-radius: 20px 0 20px 0;
+    border:3px solid #000;
+    position:relative;
+}
+.gallery-img>a>img{
+    width:100%;
+    height:100%;
+}
+.gallery-img:nth-child(2){
+    margin:0 3.5%;
+}
+.overlay{
+    width:100%;
+    height:50%;
+    background-color:rgba(0,0,0,0.8);
+    position:absolute;
+    bottom:-300px;
+    left:0;
+    transition:all 0.5s ease;
+}
+.overlay>p{
+    color:white;
+    text-align:center;
+    direction:rtl;
+    margin-top:20px;
+}
+.gallery-img:hover>div{
+    bottom:0;
+}
+
+footer{
+    width: 100%;
+    max-width: 1920px;
+    height: 300px;
+    background-color: darksalmon;
+    padding:25px 40px;
+}
+.footer-box{
+    width: 250px;
+    height: 250px;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.footer-box:nth-child(1){
+    margin-right: 150px;
+    padding: 0 ;
+
+}
+.footer-box:nth-child(2){
+    margin: 0 200px;
+    padding: 40px 10px 0 10px;
+
+}
+.footer-box:nth-child(3){
+    padding: 10px 10px;
+}
+#footer-text{
+    text-align: justify;
+    color: white;
+    direction: rtl;
+}
+#footer-communication{
+    list-style-type: none;
+}
+#footer-communication li{
+    text-align:center;
+    direction: rtl;
+    color: white;
+}
+#footer-communication>li:nth-child(2){
+    margin: 75px 0;
+}
+#media{
+    width: 60px;
+    height: 200px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 8px 8px 0;
+    top:200px;
+    left: -50px;
+    padding: 10px;
+    transition: all 250ms ease;
+}
+#media>a{
+    width: 100%;
+    transform: scale(1);
+    display: block;
+    transition: all 250ms ease;
+}
+#media>a>img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+#media>a:hover{
+    transform: scale(1.4);
+}
+#media:hover{
+    left: 0;
+}
